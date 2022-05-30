@@ -4,8 +4,8 @@
     "frontend:build": "cd udagram-frontend && yarn build",
     "frontend:test": "cd udagram-frontend && yarn test",
     "frontend:e2e": "cd udagram-frontend && yarn e2e",
-    "backend:install": "cd udagram-backend && yarn",
-    "backend:build": "cd udagram-backend && yarn build"
+    "backend:install": "cd udagram-api && yarn",
+    "backend:build": "cd udagram-api && yarn build"
   },
   "devDependencies": {}
 }

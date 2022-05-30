@@ -9,7 +9,10 @@ jobs:
     steps:
       - node/install
       - checkout
-      - run: npm install yarn
+      - run:
+          name: yarn Install
+          command: |
+            npm install yarn
       - run:
           name: Front-End Install
           command: |
@@ -28,6 +31,6 @@ jobs:
             npm run backend:build
 
 workflows:
-  say-hello-workflow:
+  ci-workflow:
     jobs:
       - build

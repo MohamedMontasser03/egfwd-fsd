@@ -8,11 +8,9 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
+          install-yarn: true
+          node-version: '16.13'
       - checkout
-      - run:
-          name: yarn Install
-          command: |
-            npm install yarn
       - run:
           name: Front-End Install
           command: |

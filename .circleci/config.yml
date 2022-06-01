@@ -41,9 +41,11 @@ jobs:
 
 workflows:
   ci-workflow:
-    filters:
-      branches:
-        only:
-          - main
+  triggers:
+    - sechdule:
+      filter:
+        branches:
+          only:
+            - master
     jobs:
       - build-deploy

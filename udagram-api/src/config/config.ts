@@ -13,10 +13,10 @@ export const config = {
   dbPort: Number(process.env.DB_PORT),
   host: process.env.POSTGRES_HOST,
   dialect: "postgres",
-  aws_region: process.env.AWS_REGION,
-  aws_profile: process.env.AWS_PROFILE,
-  aws_media_bucket: process.env.AWS_BUCKET,
-  url: process.env.URL,
+  aws_region: process.env.AWS_REGION, // Not required
+  aws_profile: process.env.AWS_PROFILE, // Not required
+  aws_media_bucket: process.env.AWS_BUCKET, // Not required
+  url: process.env.URL, // Not required
   jwt: {
     secret: process.env.JWT_SECRET,
   },

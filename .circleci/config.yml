@@ -5,9 +5,6 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@1.0.0
 jobs:
   build-deploy:
-    branches:
-      only:
-        - main
     docker:
       - image: "cimg/base:stable"
     steps:
@@ -44,5 +41,9 @@ jobs:
 
 workflows:
   ci-workflow:
+    filters:
+      branches:
+        only:
+          - main
     jobs:
       - build-deploy

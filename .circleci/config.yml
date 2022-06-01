@@ -30,14 +30,14 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
-      - run:
-          name: Front-End Deploy
-          command: |
-            cd udagram-api && cd www && ls
+      # - run:
+      #     name: Front-End Deploy
+      #     command: |
+      #       npm run frontend:deploy
       - run:
           name: Back-End Deploy
           command: |
-            npm run backend:deploy
+            pwd && npm run backend:deploy
 
 workflows:
   ci-workflow:
